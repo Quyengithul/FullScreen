@@ -1,0 +1,186 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <script type="module"
+	src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule
+	src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Fullscreen API Attack</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/facebox.css">
+</head>
+<body>
+  <div class="header">
+		<div class="up">
+			<ul class="left-section">
+				<li><a href="">Kênh người bán</a></li>
+				<li><a href="">Trở thành người bán Shopee</a></li>
+				<li><a href="">Tải ứng dụng</a></li>
+				<li><a href="">Kết nối<ion-icon name="logo-facebook"></ion-icon>
+						<ion-icon name="logo-instagram"></ion-icon>
+				</a></li>
+			</ul>
+			<ul class="right-section">
+				<li><a href=""><ion-icon name="notifications-outline"></ion-icon>
+						Thông báo
+						<div class="thongbao"></div> </a></li>
+				<li><a href=""><ion-icon name="help-circle-outline"></ion-icon>Hỗ
+						trợ</li>
+				<li><a href=""><ion-icon name="language-outline"></ion-icon>
+						Tiếng Việt<ion-icon name="chevron-down-outline"></ion-icon></a>
+					<ul class="sub_language">
+						<li><a href="">Tiếng Việt</a></li>
+						<li><a href="">Tiếng Anh</a></li>
+					</ul></li>
+				<li><a href="">Đăng ký</a></li>
+			
+					<li><a href="">Đăng Nhập</a>
+					<ul class="sub_language">
+							<li><a href="">Tài Khoản của tôi</a></li>
+							<li><a href="">Đơn hàng</a></li>
+							<li><a href="">Đăng xuất</a></li>
+						</ul></li>
+				
+				
+					
+			</ul>
+		</div>
+		<div class="down">
+			<div class="logo">
+				<a href="home"><img src="img/Logo.png" width="250px" alt=""></a>
+			</div>
+			<div class="down_up">
+				<form action="timkiem" method="get" class="input">
+					<input name="nhap" type="text" width="500px">
+					<button type="submit">
+						<ion-icon class="search" name="search-outline"></ion-icon>
+					</button>
+					<ion-icon class="cart" name="cart-outline"></ion-icon>
+				</form>
+				<ul class="down_text">
+					<li><a href="">Áo khoác</a></li>
+					<li><a href="">Dép</a></li>
+					<li><a href="">Túi sách</a></li>
+					<li><a href="">Váy</a></li>
+					<li><a href="">Balo</a></li>
+					<li><a href="">Quần jean Nam</a></li>
+					<li><a href="">Ốp iphone</a></li>
+					<li><a href="">Tai nghe bluetooth</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+  <div class="chitiet">
+		<div class="section">
+			<div class="hinh">
+				<img src="img/sp2.jfif" width="450px" alt="">
+				<div class="loat_anh">
+					<img src="img/sp2.jfif" width="85px" alt=""> <img
+						src="image/sp1.jfif" width="85px" alt=""> <img
+						src="image/sp1.jfif" width="85px" alt=""> <img
+						src="image/sp1.jfif" width="85px" alt=""> <img
+						src="image/sp1.jfif" width="85px" alt="">
+				</div>
+			</div>
+
+			<div class="text">
+				<span>Bạn Đã Mua Sản Phẩm Này với Giá 500.000.000 vnd Vui Lòng Click Vào Đây Để Kiểm Tra <a class="spoofLink" href="https://shopee.vn">Kiểm Tra</a></span>
+				<div class="danhgia">
+					<div class="sao">4
+						
+							<ion-icon name="star"></ion-icon>
+							<ion-icon name="star"></ion-icon>
+							<ion-icon name="star"></ion-icon>
+							<ion-icon name="star"></ion-icon>
+							<ion-icon name="star-outline"></ion-icon>
+						
+					</div>
+					<div class="sl_DG">455 Đánh giá</div>
+					<div class="daban">200 Đã bán</div>
+
+
+				</div>
+				<div class="text_gia">
+					<p>500000000
+						<sup>đ</sup>
+					</p>
+					
+				</div>
+				<div class="mau">
+					<p>
+						Màu sắc: <b id="hienthi">Trắng</b>
+					</p>
+					<div class="chonmau">
+						<button
+							onclick="document.getElementById('hienthi').innerHTML='Trắng'"
+							class="trang"></button>
+						<button
+							onclick="document.getElementById('hienthi').innerHTML='Đen'"
+							class="den"></button>
+					</div>
+				</div>
+				<div class="nhapdulieu">
+					<div class="soluong">
+						<p>
+							Số Lượng:<b id="soluong">1</b>
+						</p>
+						<button onclick="tru()">-</button>
+						<input onchange="nhap()" id="id1" type="number" value="1" min="0"
+							max="500">
+						<button id="cong" onclick="cong()">+</button>
+					</div>
+					<div class="themgiohang">
+						<button id="them">THÊM VÀO GIỎ HÀNG</button>
+						<button id="mua">MUA NGAY</button>
+					</div>
+
+				</div>
+				<div class="tong">
+					<h3>Tổng tiền:</h3>
+					<p id="tong">
+						0 <sup>đ</sup>
+					</p>
+				</div>
+				<div class="mota">
+					<h3>Mô Tả</h3>Mô tả</div>
+			</div>
+		</div>
+	</div>
+  
+
+  <div id="spoofHeader">
+    <div id="spoofMenu"></div>
+    <div id="spoofBrowser"></div>
+  </div>
+
+  <div id="spoofSite">
+    <img src="img/main.jpeg">
+  </div>
+
+  <div id="phished" style="display: none;">
+    <p>
+      <b>Hacked !!!</b><br><br>
+      <img src="img/New/hack.gif"><br><br>
+      <b>Your computer has been hacked!!!
+	  <strong>20110305 Trần Bửu Quyến
+      20110297 Đỗ Duy Hào
+      20110689 Lê Anh Nhân
+    </p>
+  </div>
+
+  <script src="js/libs/jquery-1.7.2.js"></script>
+  <script src="js/libs/jquery-ui-1.8.18.custom.min.js"></script>
+  <script src="js/libs/facebox.js"></script>
+  <script src="js/libs/browser-detect.js"></script>
+  <script src="js/libs/fullscreen-api-shim.js"></script>
+
+  <script src="js/script.js"></script>
+
+
+</body>
+</html>

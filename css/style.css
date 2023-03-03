@@ -1,0 +1,564 @@
+html.fullscreened {
+  overflow-y: hidden;
+  background-color: #fff;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header
+{
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(#F53D2D,#f5c118);
+}
+.avatar
+{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.up
+{
+  display: flex;
+}
+.left-section
+{
+  display: flex;
+  list-style: none;
+ width: 700px;
+  margin-left: 150px;
+}
+.left-section>li{
+  width: fit-content;
+  padding-right: 10px;
+}
+.right-section
+{
+  display: flex;
+  height: 50px;
+  margin-left: 200px;
+  list-style: none;
+}
+.header ion-icon
+{
+  padding: 0 2px;
+  font-size: 15px;
+  line-height: 25px;
+}
+.left-section,.right-section>li{
+  padding: 10px 10px;
+  position: relative;
+ 
+}
+.right-section{
+  width: 550px;
+  margin-left: -50px;
+}
+.left-section>li>a{
+  text-decoration: none;
+  color:white;
+  font-size: 14px;
+  border-right:1px solid #F86A5B;
+  padding-right: 10px;
+
+}
+.right-section>li>a{
+  text-decoration: none;
+  color:white;
+  font-size: 14px;
+  border-right:1px solid #F86A5B;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+.sub_language
+{
+  position: absolute;
+  background-color: white;
+  list-style: none;
+  left: -30px;
+  top:40px;
+  z-index: 2;
+  display: none;
+}
+.sub_language li{
+  padding: 10px 10px;
+}
+.sub_language li a
+{
+  color:black;
+  text-decoration: none;
+}
+.header li:hover .sub_language{
+  display: block;
+  z-index:2;
+}
+.left-section>li:hover>a{
+color:#FCC4B6;
+}
+.right-section>li:hover>a{
+  color:#FCC4B6;
+}
+.sub_language>li>a:hover{
+  color:#F53D2D;
+}
+.sub_language::after
+{
+  position: absolute;
+  top: -6px;
+  right: 4px;
+  z-index: -1;
+  content: "";
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background-color: white;
+}
+.down
+{
+  margin-left: 150px;
+  display: flex;
+ 
+  
+}
+.down .cart
+{
+  font-size: 40px;
+  color:white;
+  position: absolute;
+  right: 0;
+  transform: translateX(200%);
+  
+}
+.down .search
+{
+  padding: 8px 15px;
+  background-color: #FB6445;
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  right: 5px;
+  top:4px;
+
+}
+.input
+{
+  position: relative;
+  width: 800px;
+  margin-top: 20px;
+}
+input
+{
+  width: 800px;
+  height: 40px;
+  border-radius:5px ;
+  position: absolute;
+}
+
+.down_text
+{
+  margin-top: 70px;
+  display: flex;
+  font-size: 15px;
+  list-style: none;
+}
+.down_text>li>a{
+  list-style: none;
+  text-decoration: none;
+  color:white;
+  padding: 0 10px;
+  font-size: 12px;
+}
+.down_text>li>a:hover{
+  color:#e2694a;
+}
+.than-bg
+{
+  position: relative;
+  z-index: -1;
+}
+.banner
+{
+  position: absolute;
+  top: 30px;
+  left: 150px;
+  display: flex;
+}
+.chitiet
+{
+    width: 100%;
+    height: 1000px;
+    background-color: #F5F5F5;
+    padding-top: 30px;
+}
+.section
+{
+    display: flex;
+    background-color: white;
+    width: 1250px;
+    height: auto;
+    padding: 20px;
+    margin-left: 150px;
+}
+.loat_anh img{
+    padding:10px 5px;
+}
+.text{
+    margin-left: 20px;
+    width: 680px;
+}
+.text span
+{
+    font-size: 22px;
+
+}
+.text::before
+{
+    content: "Yêu thích";
+    background-color: #F53D2D;
+    color:white;
+    padding: 3px 7px;
+    border-radius: 2px;
+}
+.text_gia
+{
+
+   
+   background-color: #F5F5F5;
+    padding:20px 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+}   
+.text_gia>.giam
+{
+    color: #F53D2D;
+    font-size: 30px;
+    padding-left: 30px;
+    display: flex;
+}
+.danhgia
+{
+    display: flex;
+    margin-top: 10px;
+}
+.danhgia>.sao,.danhgia>.sl_DG,.danhgia>.daban
+{
+ padding: 0 10px;
+
+
+}
+.sao{
+    color: #F53D2D;
+    border-right: 1px solid #222;
+}
+.daban{
+    border-left:1px solid #222;
+}
+.mau .trang
+{
+ width: 20px;
+ height: 20px;
+ border-radius: 50%;
+ background-color:white;
+ border: 1px solid black;
+}
+.mau .den
+{
+ width: 20px;
+ height: 20px;
+ border-radius: 50%;
+ background-color: black;
+ border: 1px solid black;
+}
+#mua{
+    background-color: #FB6445;
+    border: none; 
+    box-shadow:2px 2px 0 0 black;   
+}
+#mua:hover
+{
+ background-color: #4b4bfb;
+}
+#them:hover
+{
+ background-color: #ee6457;
+}
+#them{
+    background-color: #f5c118;
+    border: none;   
+    box-shadow:2px 2px 0 0 black;  
+}
+.themgiohang button
+{
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    color: white;
+}
+.nhapdulieu
+{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+h3{
+    color: #1195bd;}
+.mota
+{
+    width: 500px;
+    margin-top: 20px;
+}
+.tong{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.tong>p{
+    font-weight: bold;
+    font-size: 20px;
+}
+.themgiohang
+{
+    margin-top:20px ;
+    margin-left: 80px;
+}
+.soluong
+{
+    position: relative;
+}
+.soluong>input{
+    position: absolute;
+    width: 66px;
+    height: 46px;
+    margin-top: 24px;
+}
+.soluong>button{
+    width: 46px;
+    height: 46px;
+    background-color: white;
+    border: 1px solid rgb(145, 139, 139);
+    margin-top: 24px;
+}
+#cong
+{
+    position: absolute;
+    left: 112px;
+}
+.soluong>input
+{
+    text-align: center;
+    padding:0 12px;
+}.menu-item
+{
+    width: 190px;
+    height: 300px;
+    float: left;
+    position: relative;
+    margin-left: 10px;
+    background-color: white;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border: 1px solid white;
+    box-shadow: 0 0 4px rgba(0,0, 0, 0.3);
+}
+.menu-item .item_text
+{
+    padding:10px;
+    font-size: 14px;
+}
+.menu-item .item_gia
+{
+    position: absolute;
+    bottom: 5px;
+    left:5px;
+    color: #e2694a;
+}
+.menu-item::after
+{
+    content: "Yêu thích";
+    color:white;
+    padding:0 10px;
+    align-items: center;
+    width: 70px;
+    font-size: 12px;
+    height: 15px;
+    top: 10px;
+    left: -5px;
+    border-radius: 4px;
+    position: absolute;
+    background-color: #F53D2D;
+
+}
+.menu-item .item_daban
+{
+    font-size: 14px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+.menu{
+    width: 1200px;
+    height: auto;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.item_text a
+{
+    text-decoration: none;
+    color:black;
+}
+.menu-item .layer2
+{
+    width: 100%;
+    height: 63%;
+    background-color: rgba(0, 0, 0, 0.566);
+    position: absolute;
+    top:0;
+    left: 0;
+    color:white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+}
+.layer2 ion-icon
+{
+    padding: 10px 10px;
+    margin-left: 10px;
+  
+}
+.menu-item:hover::after
+{
+ display: none;
+}
+.menu-item:hover .layer2{
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 2;
+}
+.menu-item:hover .layer2 ion-icon:nth-child(1)
+{
+    animation: traiqua;
+    animation-duration: 0.5s;
+}
+.menu-item:hover .layer2 ion-icon:nth-child(2)
+{
+    animation: traiqua;
+    animation-duration: 1s;
+
+}
+.menu-item:hover .layer2 ion-icon:nth-child(3)
+{
+    animation: traiqua;
+    animation-duration: 1.5s;
+}
+.layer2 ion-icon:hover
+{
+    color: #F53D2D;
+}
+@keyframes traiqua
+{
+    from{
+        
+        margin-left: -40px;
+        }
+    to{
+    
+       margin-left: 10px;
+    }
+}
+.fullscreened #container { display: none; }
+
+#spoofSite {
+  background-color: #fff;
+  left: 0;
+  margin: 0 auto;
+  overflow-y: scroll;
+
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+
+  /* Updated in JS */
+  top: 100px;
+  height: 500px;
+}
+.not-fullscreened #spoofSite { display: none; }
+
+
+#spoofHeader {
+  position: fixed;
+  top: 0;
+  left: 0;  
+  width: 100%;
+  z-index: 2;
+}
+.not-fullscreened #spoofHeader { display: none; }
+
+#spoofMenu, #spoofBrowser { width: 100%; }
+
+
+/* Menu (OS X only) */
+
+.osx #spoofMenu { height: 22px; }
+.windows #spoofMenu, .linux #spoofMenu { height: 0; }
+
+.chrome.osx #spoofMenu {
+  background: url(../img/menu-osx-chrome-left.png) left top no-repeat, url(../img/menu-osx-right.png) right top no-repeat, url(../img/menu-osx-bg.png) left top repeat-x;
+}
+
+.firefox.osx #spoofMenu {
+  background: url(../img/menu-osx-firefox-left.png) left top no-repeat, url(../img/menu-osx-right.png) right top no-repeat, url(../img/menu-osx-bg.png) left top repeat-x;
+}
+
+.safari.osx #spoofMenu {
+  background: url(../img/menu-osx-safari-left.png) left top no-repeat, url(../img/menu-osx-right.png) right top no-repeat, url(../img/menu-osx-bg.png) left top repeat-x;
+}
+
+/* Browser UI */
+
+.chrome.osx #spoofBrowser {
+  background: url(../img/browser-osx-chrome-left.png) left top no-repeat, url(../img/browser-osx-chrome-right.png) right top no-repeat, url(../img/browser-osx-chrome-bg.png) left top repeat-x;
+  height: 72px;
+}
+
+.chrome.windows #spoofBrowser {
+  background: url(../img/left.png) left top no-repeat, url(../img/right.png) right top no-repeat, url(../img/bg.png) left top repeat-x;
+  height: 100px;
+}
+
+.chrome.linux #spoofBrowser {
+  background: url(../img/browser-linux-chrome-left.png) left top no-repeat, url(../img/browser-linux-chrome-right.png) right top no-repeat, url(../img/browser-linux-chrome-bg.png) left top repeat-x;
+  height: 86px;
+}
+
+.firefox.osx #spoofBrowser {
+  background: url(../img/browser-osx-firefox-center.png) center top no-repeat, url(../img/New/browser-windows-firefox-left.png) left top no-repeat, url(../img/New/browser-windows-firefox-right.png) right top no-repeat, url(../img/browser-osx-firefox-bg.png) left top repeat-x;
+  height: 87px;
+}
+
+.firefox.windows #spoofBrowser {
+  background: url(img/browser-windows-firefox-left.png) left top no-repeat, url(../img/New/browser-windows-firefox-right.png) right top no-repeat, url(../img/browser-windows-firefox-bg.png) left top repeat-x;
+  height: 63px;
+}
+
+.firefox.linux #spoofBrowser {
+  background: url(../img/New/browser-windows-firefox-left.png) left top no-repeat, url(../img/New/browser-windows-firefox-right.png) right top no-repeat, url(../img/browser-linux-firefox-bg.png) left top repeat-x;
+  height: 90px;
+}
+
+.safari.osx #spoofBrowser {
+  background: url(../img/browser-osx-safari-center.png) center top no-repeat, url(../img/browser-osx-safari-left.png) left top no-repeat, url(../img/browser-osx-safari-right.png) right top no-repeat, url(../img/browser-osx-safari-bg.png) left top repeat-x;
+  height: 72px;
+}
+
+.safari.windows #spoofBrowser {
+  background: url(../img/browser-windows-safari-center.png) center top no-repeat, url(../img/browser-windows-safari-left.png) left top no-repeat, url(../img/browser-windows-safari-right.png) right top no-repeat, url(../img/browser-windows-safari-bg.png) left top repeat-x;
+  height: 72px;
+}
